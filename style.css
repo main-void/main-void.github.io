@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: #00ff66;
+
+  font-family: 'Fira Code', monospace;
+
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+#terminal {
+  padding: 30px;
+
+  font-size: 20px;
+
+  text-shadow: 0 0 5px #00ff66;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.prompt {
+    margin-right: 8px;
+}
+
+span.prompt {
+    margin-left: 30px;
+}
+
+.command-input {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: #00ff66;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    width: 100%;
+}
+
+.line {
+  margin-bottom: 10px;
+
+  white-space: pre-wrap;
+}
+
+.cursor {
+  display: inline-block;
+
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
