@@ -187,7 +187,7 @@ function processCommand(command) {
 
     default:
 
-      showDefault():
+      showDefault();
 
       break;
   }
