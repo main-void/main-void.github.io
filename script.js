@@ -187,9 +187,9 @@ function processCommand(command) {
 
     default:
 
-      showDefault();
+      addLine("Command not found.");
 
-      break;
+      createPrompt();
   }
   
 }
@@ -314,13 +314,6 @@ function clearTerminal() {
   terminal.innerHTML = "";
   addLine("Terminal cleared.");
   terminal.scrollTop = terminal.scrollHeight;
-
-  createPrompt();
-
-}
-
-function showDefault() {
-  addLine("Command not found.");
 
   createPrompt();
 
